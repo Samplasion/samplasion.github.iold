@@ -8,6 +8,5 @@ none
 
 ### Planned features
 
-Countdown
-
-Themes
+- Countdown
+- Themes
