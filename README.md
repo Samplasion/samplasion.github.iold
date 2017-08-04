@@ -12,5 +12,5 @@ This app is a countdown app. (_Very early stages._) - **Almost finished**
 
 ### Download
 
-[**HERE**](https://github.com/Samplasion/Countdown-app/releases/tag/1.0.0) (XCode Project)
-[Source](https://github.com/Samplasion/Countdown-app)
+- [**HERE**](https://github.com/Samplasion/Countdown-app/releases/tag/1.0.0) (XCode Project)
+- [Source](https://github.com/Samplasion/Countdown-app)
