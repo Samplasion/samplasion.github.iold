@@ -1,4 +1,4 @@
-## Countdown-app
+# Countdown-app
 
 This app is a countdown app. (_Very early stages._) - **Almost finished**
 
