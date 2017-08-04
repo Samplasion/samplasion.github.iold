@@ -1,12 +1,11 @@
 ## Countdown-app
 
-This app is a [countdown app](https://github.com/Samplasion/Countdown-app). Very early stages.
+This app is a [countdown app](https://github.com/Samplasion/Countdown-app). (_Very early stages._) - **Finished**
 
 ### Current features
 
-none
+- Countdown up to 60 seconds
 
 ### Planned features
 
-- Countdown
 - Themes
