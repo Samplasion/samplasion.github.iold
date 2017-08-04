@@ -1,6 +1,6 @@
 ## Countdown-app
 
-This app is a [countdown app](https://github.com/Samplasion/Countdown-app). (_Very early stages._) - **Almost finished**
+This app is a countdown app. (_Very early stages._) - **Almost finished**
 
 ### Current features
 
@@ -9,3 +9,8 @@ This app is a [countdown app](https://github.com/Samplasion/Countdown-app). (_Ve
 ### Planned features
 
 - Themes
+
+### Download
+
+[**HERE**](https://github.com/Samplasion/Countdown-app/releases/tag/1.0.0) (XCode Project)
+[Source](https://github.com/Samplasion/Countdown-app)
