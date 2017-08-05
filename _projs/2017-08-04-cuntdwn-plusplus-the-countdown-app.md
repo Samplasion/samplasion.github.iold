@@ -1,4 +1,8 @@
-# Cuntdwn ++
+---
+layout: post
+title: "Cuntdwn ++ the countdown app"
+date: 2017-08-04
+---
 
 This app is a countdown app. (_Very early stages._) - **Almost finished**
 
