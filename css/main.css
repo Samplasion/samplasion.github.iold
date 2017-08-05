@@ -13,10 +13,12 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
+    text-font: 'Arial';
     text-decoration: none;
     color: #999;
 }
 a:hover {
+    text-font: 'Arial';
     text-decoration: underline;
 }
 h1 {
@@ -35,6 +37,7 @@ footer {
 }
 
 ul.posts { 
+    text-font: 'Arial';
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
