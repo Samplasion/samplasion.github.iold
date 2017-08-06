@@ -25,9 +25,18 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p {
+h2 {
     font-family: 'Arial';
+}
+h3 {
+    font-family: 'Arial';
+}
+p1 {
+    font-family: 'Arial';
+}
+p {
     font-size: 1.5em;
+    font-family: 'Arial';
     line-height: 1.4em;
     color: #333;
 }
