@@ -1,58 +1,58 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-    text-font: 'Arial';
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-font: 'Arial';
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-font: 'Arial';
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-h2 {
-    font-family: 'Arial';
-}
-h3 {
-    font-family: 'Arial';
-}
-p1 {
-    text-font: 'Arial';
-}
-p {
-    font-size: 1.5em;
-    text-font: 'Arial';
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    text-font: 'Arial';
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-    text-font: 'Arial';
-}
+ body {
+      margin: 60px auto;
+      width: 70%;
+ +    font-family: 'Arial';
+  }
+  nav ul, footer ul {
+      font-family:'Helvetica', 'Arial', 'Sans-Serif';
+     padding: 0px;
+     list-style: none;
+     font-weight: bold;
+ }
+ nav ul li, footer ul li {
+     display: inline;
+     margin-right: 20px;
+ }
+ a {
+     text-font: 'Arial';
+     text-decoration: none;
+     color: #999;
+ }
+ a:hover {
+     text-font: 'Arial';
+     text-decoration: underline;
+ }
+ h1 {
+     font-size: 3em;
+     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+ }
+ h2 {
+     font-family: 'Arial';
+ }
+ h3 {
+     font-family: 'Arial';
+ }
+ p1 {
+     font-family: 'Arial';
+ }
+ p {
+     font-size: 1.5em;
+     font-family: 'Arial';
+     line-height: 1.4em;
+     color: #333;
+ }
+ footer {
+     border-top: 1px solid #d5d5d5;
+     font-size: .8em;
+ }
+ 
+ ul.posts { 
+     text-font: 'Arial';
+     margin: 20px auto 40px; 
+     font-size: 1.5em;
+ }
+  
+  ul.posts li {
+      list-style: none;
+ +    font-family: 'Arial';
+  }
