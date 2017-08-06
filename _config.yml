@@ -4,3 +4,4 @@ permalink: /blog/:year/:month/:day/:title
 gems:
  - jemoji
  - jekyll-mentions
+ - jekyll-sitemap
