@@ -3,4 +3,5 @@ layout: default
 title: Projectio Page (3DS Projects)
 ---
 
-<p1>none yet.</p1>
+# Actual Projects
+None Yet :3
