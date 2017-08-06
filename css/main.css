@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: 'Arial';
+    text-font: 'Arial';
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -33,11 +33,11 @@ h3 {
     font-family: 'Arial';
 }
 p1 {
-    font-family: 'Arial';
+    text-font: 'Arial';
 }
 p {
     font-size: 1.5em;
-    font-family: 'Arial';
+    text-font: 'Arial';
     line-height: 1.4em;
     color: #333;
 }
@@ -54,5 +54,5 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    font-family: 'Arial';
+    text-font: 'Arial';
 }
