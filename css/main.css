@@ -17,7 +17,7 @@
  a {
      text-font: 'Arial';
      text-decoration: none;
-     color: #ff0000;
+     color: 9bdbb7;
  }
  a:hover {
      text-font: 'Arial';
@@ -26,6 +26,7 @@
  h1 {
      font-size: 3em;
      font-family:'Helvetica', 'Arial', 'Sans-Serif';
+     font-color: #afafaf;
  }
  h2 {
      font-family: 'Arial';
@@ -38,7 +39,7 @@
  }
  p {
      font-size: 1.5em;
-     font-color: #ffffff;
+     font-color: #afafaf;
      font-family: 'Arial';
      line-height: 1.4em;
      color: #333;
