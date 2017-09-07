@@ -46,10 +46,12 @@
  }
 .warn{
 	border: 2px firebrick;
+	border-radius: 10px;
 	background-color: firebrick;
 }
 .info{
 	border: 2px blue;
+	border-radius: 10px;
 	background-color: blue;
 }
  footer {
