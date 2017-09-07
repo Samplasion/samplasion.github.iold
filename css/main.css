@@ -1,7 +1,7 @@
  body {
       margin: 60px auto;
       width: 70%;
-      background-color: #325182;
+      background-color: white;
  +    font-family: 'Arial';
   }
   nav ul, footer ul {
@@ -44,6 +44,14 @@
      line-height: 1.4em;
      color: #333;
  }
+.warn{
+	border: 2px firebrick;
+	background-color: firebrick;
+}
+.info{
+	border: 2px blue;
+	background-color: blue;
+}
  footer {
      border-top: 1px solid #d5d5d5;
      font-size: .8em;
