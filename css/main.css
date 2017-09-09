@@ -45,11 +45,13 @@
      color: #333;
  }
 .warn{
-	border: 2px firebrick;
+	display: inline;
+	border: 2px #e65c00;
 	border-radius: 10px;
-	background-color: firebrick;
+	background-color: #cc5200;
 }
 .info{
+	display: inline;
 	border: 2px blue;
 	border-radius: 10px;
 	background-color: blue;
