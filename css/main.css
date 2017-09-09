@@ -44,17 +44,19 @@
      line-height: 1.4em;
      color: #333;
  }
-.warn{
+.warn {
 	border: 2px #e65c00;
 	border-radius: 20px;
 	background-color: #cc5200;
 	font-color: white;
+	word-wrap: break-word;
 }
-.info{
+.info {
 	border: 2px blue;
 	border-radius: 20px;
 	background-color: blue;
 	font-color: white;
+	word-wrap: break-word;
 }
  footer {
      border-top: 1px solid #d5d5d5;
