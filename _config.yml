@@ -1,4 +1,5 @@
-name: Samplasion Projectio
+name: "Samplasion Projectio"
+title_separator: "-"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 gems:
