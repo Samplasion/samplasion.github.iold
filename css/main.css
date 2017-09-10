@@ -45,14 +45,14 @@
      color: #333;
  }
 .warn {
-	border: 2px #e65c00;
+	border: 5px 5px 5px 5px #e65c00;
 	border-radius: 20px;
 	background-color: #cc5200;
 	font-color: white;
 	word-wrap: break-word;
 }
 .info {
-	border: 2px blue;
+	border: 5px 5px 5px 5px blue;
 	border-radius: 20px;
 	background-color: blue;
 	font-color: white;
