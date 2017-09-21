@@ -17,7 +17,7 @@
  a {
      text-font: 'Arial';
      text-decoration: none;
-     font-color: firebrick;
+     color: firebrick;
  }
  a:hover {
      text-font: 'Arial';
@@ -102,7 +102,6 @@
 /* ==========================================================================
    NOTICE TEXT BLOCKS
    ========================================================================== */
-
 /**
  *  Default Kramdown usage (no indents!):
  *  <div class="notice" markdown="1">
@@ -197,3 +196,98 @@
   @include notice($danger-color);
 }
 
+#test {
+  color: gray;
+}
+div {
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+.code {
+  color: black;
+  background-color: #A5A5A5;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.27em;
+  padding: 3px;
+}
+.console {
+  color: #00FF00;
+  background-color: #000000;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.27em;
+  padding: 4px;
+}
+body {
+	font-size: 13pt;
+	background-color: #efefef;
+	padding: 10px;
+	margin: 0;
+}
+p {
+  font-family: 'Arial';
+}
+#newd {
+  color: #00FF00;
+  background-color: #000000;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.27em;
+}
+.highlight {
+  color: #222;
+  background-color: #00c2ff;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+#abc {
+  font-size: 1.65em
+}
+#random {
+  font-size: 1.65em
+}
+h1 span {
+	border: 4px dashed #20bcd5;
+	padding: 10px;
+   font-family: Futura, Arial;
+}
+h3 span {
+	border: 4px dashed #20bcd5;
+	padding: 6px;
+   font-family: Futura, Arial;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+.img-circle {
+	border: 3px solid white;
+	border-radius: 50%;
+}
+.section {
+	background-color: #fff;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+li {
+   font-family: Arial;
+}
+.warn {
+  background: linear-gradient(red, yellow);
+  border-radius: 8px;
+margin-bottom: 10px;
+}
+.info {
+  background: linear-gradient(#647ac8, #00caff);
+  border-radius: 8px;
+margin-bottom: 10px;
+}
+.succ {
+  background: linear-gradient(#008d21, #0f0);
+  border-radius: 8px;
+margin-bottom: 10px;
+}
