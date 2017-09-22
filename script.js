@@ -62,6 +62,8 @@ function random() {
   ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
 }
 
+var rand = myArray[Math.floor(Math.random() * myArray.length)];
+
 var img = [
   'img/trumpban.jpg',
   'img/apollo.jpg']
