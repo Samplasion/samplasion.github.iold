@@ -62,7 +62,10 @@ function random() {
   ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
 }
 
-var rand = myArray[Math.floor(Math.random() * myArray.length)];
+function hex() {
+  var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
+  var rand = nrs[Math.floor(Math.random() * nrs.length)];
+  document.getElementById("randex").innerHTML = '<font color="#'+rand+rand+rand+rand+rand+rand+'">#'+rand+rand+rand+rand+rand+rand+'is the color</font>'
 
 var img = [
   'img/trumpban.jpg',
