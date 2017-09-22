@@ -228,6 +228,6 @@ function loadere() {
   } else {
     month='N/A'
   };
-document.querySelector('#lol').innerHTML = day+", "+month+" "+mday+", "+year;
+document.getElementById('lol').innerHTML = day+", "+month+" "+mday+", "+year;
 }
 });
