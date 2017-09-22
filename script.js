@@ -73,8 +73,8 @@ function bdm() {
 }
 
 var img = [
-  'img/trumpban.png',
-  'img/apollo.png']
+  'img/trumpban.jpg',
+  'img/apollo.jpg']
 var num = 0
 var photo = document.getElementById('photo')
 photo.src = img[num];
