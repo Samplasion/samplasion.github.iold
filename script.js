@@ -73,11 +73,8 @@ function bdm() {
 }
 
 var img = [
-  'img/20170920225040.png',
-  'img/20170920230850.png',
-  "http://www.sololearn.com/uploads/slider/1.jpg", 
-  "http://www.sololearn.com/uploads/slider/2.jpg", 
-  "http://www.sololearn.com/uploads/slider/3.jpg"]
+  'img/trumpban.png',
+  'img/apollo.png']
 var num = 0
 var photo = document.getElementById('photo')
 photo.src = img[num];
@@ -189,6 +186,7 @@ function cleare() {
 }
 
 addEventListener('load', function(e) {
+function loadere() {
   var d = new Date;
   var day = d.getDay();
   var dd = d.getDay();
@@ -241,4 +239,5 @@ addEventListener('load', function(e) {
     month='N/A'
   };
 document.querySelector('#lol').innerHTML = day+", "+month+" "+mday+", "+year;
+}
 });
