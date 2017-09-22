@@ -42,36 +42,6 @@ function Data() {
     month = '0'+month
   };
 document.getElementById('newd').innerHTML =  hours+":"+mins+":"+secs+' '+day+', '+month+'/'+mday+'/'+year+" ('"+yr+')';
-  var bdayMsg = "Compleanno di ";
-  var mm = "Mamma"
-  var pp = "Papà"
-  var ff = "Faby"
-  var io = "Francy"
-  var bdayMsg2 = '! Oggi compie <font color="#f20">'
-  var mma = 1978
-  mma = year-mma
-  var ppa = 1970
-  ppa = year-ppa
-  var ffa = 2008
-  ffa = year-ffa
-  var ioa = 2004
-  ioa = year-ioa
-  if (mday==19 && month==6) {
-    var abc = document.getElementById('abc')
-abc.innerHTML = "--"+bdayMsg+mm+'! Oggi compierebbe <font color="#f20">'+mma+"</font> anni--";
-  }
-  if (mday==3 && month==2) {
-    var abc = document.getElementById('abc')
-abc.innerHTML = "--"+bdayMsg+pp+bdayMsg2+ppa+"</font> anni!--";
-  }
-  if (mday==25 && month==4) {
-    var abc = document.getElementById('abc')
-abc.innerHTML = "--"+bdayMsg+ff+bdayMsg2+ffa+"</font> anni!--";
-  }
-  if (mday==21 && month==4) {
-    var abc = document.getElementById('abc')
-abc.innerHTML = "--"+bdayMsg+io+'! Oggi compio <font color="#f20">'+ioa+"</font> anni!--";
-  }
 }
 function data() {
   setInterval(Data, 1000)
