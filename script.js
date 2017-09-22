@@ -62,16 +62,6 @@ function random() {
   ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
 }
 
-function bdm() {
-  var d = new Date();
-  var mday = d.getDate();
-  var month = d.getMonth();
-  var bdayMsg = "Compleanno di Mamma";
-  if (mday==19 && month==6) {
-    document.getElementById('abc').innerHTML = "--"+bdayMsg+"--";
-  }
-}
-
 var img = [
   'img/trumpban.jpg',
   'img/apollo.jpg']
