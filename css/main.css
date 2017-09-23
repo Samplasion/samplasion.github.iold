@@ -291,11 +291,11 @@ margin-bottom: 10px;
 margin-bottom: 10px;
 }
 #myProgress {
-    width: 100%;
+    width: 50%;
     background-color: grey;
 }
 #myBar {
-    width: 10%;
+    width: 5%;
     height: 30px;
     background-color: #4CAF50;
     text-align: center; 
