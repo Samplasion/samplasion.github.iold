@@ -83,6 +83,8 @@ function move() {
     function frame() {
         if (width >= 100) {
             clearInterval(id);
+            var butt = document.getElementById('prob')
+            butt.parentNode.removeChild(butt)
         } else {
             width++; 
             elem.style.width = width + '%'; 
