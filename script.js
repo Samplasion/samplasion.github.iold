@@ -86,6 +86,7 @@ function move() {
         } else {
             width++; 
             elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1 + '%';
         }
     }
 }
