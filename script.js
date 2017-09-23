@@ -84,7 +84,7 @@ function move() {
         if (width >= 100) {
             clearInterval(id);
         } else {
-            width+=0.1; 
+            width++; 
             elem.style.width = width + '%'; 
             elem.innerHTML = width * 1 + '%';
         }
