@@ -78,7 +78,7 @@ function fib() {
 
 function move() {
     var elem = document.getElementById("myBar"); 
-    var width = 0.1;
+    var width = 1;
     var id = setInterval(frame, 10);
     function frame() {
         if (width >= 100) {
