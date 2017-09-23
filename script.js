@@ -55,6 +55,17 @@ function random() {
   var evenodd = '<font color="#090">odd</font>.'
   let lol = getRndInteger(1, 1000)
   var sel = document.getElementById("select")
+  var slider = document.getElementById("myRange");
+  if (slider.value == 1) {
+    if (lol%2==1)
+      lol+=1
+    }
+  } else if (slider.value == 2) {
+    if (lol%2==0) {
+      lol-=1
+    }
+  } else {}
+        
   if (lol%2==0) {
     evenodd = '<font color="#00f">even</font>.'
   }
