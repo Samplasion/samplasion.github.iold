@@ -62,6 +62,20 @@ function random() {
   ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
 }
 
+function fib() {
+  var t0 = 0
+  var t1 = 0
+  var t2 = 1
+  var n = prompt('Enter a number')
+  n = parseInt(n)
+  for (var i = 0; i < n; i++) {
+    document.getElementById('fib').innerHTML = t1+t2
+    t0=t1
+    t1=t2
+    t2=t0+t1
+  }
+}
+
 function hex() {
   var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
   var rand = nrs[Math.floor(Math.random() * nrs.length)];
