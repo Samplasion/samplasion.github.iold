@@ -54,7 +54,6 @@
  function random() {
    var evenodd = '<font color="#090">odd</font>.'
    let lol = getRndInteger(1, 1000)
-   var sel = document.getElementById("select")
    if (lol%2==0) {
      evenodd = '<font color="#00f">even</font>.'
    }
@@ -62,21 +61,8 @@
    ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
  }
  
- function fib() {
-   var t0 = 0
-   var t1 = 0
-   var t2 = 1
-   var n = prompt('Enter a number')
-   n = parseInt(n)
-   for (var i = 0; i < n; i++) {
-     document.getElementById('fib').innerHTML = t1+t2
-     t0=t1
-     t1=t2
-     t2=t0+t1
-   }
- }
  
- function move() {
+function move() {
      var elem = document.getElementById("myBar"); 
      var width = 1;
      var id = setInterval(frame, 10);
