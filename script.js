@@ -1,3 +1,4 @@
+addEventListener('load', function(e) {
  var deg = Math.PI / 180
  function Data() {
    var d = new Date;
@@ -202,9 +203,7 @@ function move() {
    let nr = document.getElementById(`nr`);
    nr.innerHTML = "{-}"
  }
- 
- addEventListener('load', function(e) {
- function loadere() {
+
    var d = new Date;
    var day = d.getDay();
    var dd = d.getDay();
@@ -257,5 +256,11 @@ function move() {
      month='N/A'
    };
  document.getElementById('lol').innerHTML = day+", "+month+" "+mday+", "+year;
-}
 });
+addEventListener('click', click);
+var clicks = 0
+function click() {
+  clicks++
+  var clivc = document.getElementById("click")
+  clivc.innerHTML = "You clicked " + clicks + " times so far"
+}
