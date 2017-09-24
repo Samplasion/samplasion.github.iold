@@ -90,57 +90,7 @@ function move() {
      var rand6 = nrs[Math.floor(Math.random() * nrs.length)];
    document.getElementById("randex").innerHTML = '<font color="#'+rand+rand2+rand3+rand4+rand5+rand6+'">#'+rand+rand2+rand3+rand4+rand5+rand6+' is the color</font>'
  }
- 
- var img = [
-   'img/trumpban.jpg',
-   'img/apollo.jpg']
- var num = 0
- var photo = document.getElementById('photo')
- photo.src = img[num];
- 
- function next() {
-   num += 1
-   if (num >= img.length) {
-     num = 0
-   }
-   photo.src = img[num];
-   console.log('Next ok')
- }
- 
- function prev() {
-   num -= 1
-   if (num < 0) {
-     num = img.length - 1
-   }
-   photo.src = img[num];
-   console.log("Prev ok")
- }
- 
- var img2 = [
-   'img/20170921084601.png',
-   'img/20170921084612.png']
- var num2 = 0
- var photo2 = document.getElementById('photot')
- photo2.src = img2[num2];
- 
- function next2() {
-   num2 += 1
-   if (num2 >= img2.length) {
-     num2 = 0
-   }
-   photo2.src = img2[num2];
-   console.log('Next ok')
- }
- 
- function prev2() {
-   num2 -= 1
-   if (num2 < 0) {
-     num2 = img2.length - 1
-   }
-   photo2.src = img2[num2];
-   console.log("Prev ok")
- }
- 
+
  function sum() {
    var n1 = prompt("1")
    n1 = parseInt(n1)
@@ -204,6 +154,7 @@ function move() {
    nr.innerHTML = "{-}"
  }
 
+function loadere() {
    var d = new Date;
    var day = d.getDay();
    var dd = d.getDay();
@@ -256,11 +207,5 @@ function move() {
      month='N/A'
    };
  document.getElementById('lol').innerHTML = day+", "+month+" "+mday+", "+year;
-});
-addEventListener('click', click);
-var clicks = 0
-function click() {
-  clicks++
-  var clivc = document.getElementById("click")
-  clivc.innerHTML = "You clicked " + clicks + " times so far"
 }
+});
