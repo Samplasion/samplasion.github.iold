@@ -104,31 +104,6 @@ function move() {
     }
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("out");
-var value = slider.value
-if (value == 0) {
-      value = "Random"
-    } else if (value == 1) {
-      value = "Even"
-    } else {
-      value = "Odd"
-    }
-output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-    var value = slider.value
-    if (value == 0) {
-      value = "Random"
-    } else if (value == 1) {
-      value = "Even"
-    } else {
-      value = "Odd"
-    }
-    output.innerHTML = this.value;
-}
-
 function hex() {
   var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
   var rand = nrs[Math.floor(Math.random() * nrs.length)];
