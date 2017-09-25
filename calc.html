@@ -16,7 +16,8 @@ title: Calculator
 <script>
 function weightConverterOZ(valNum, valNun) {
   var sec = document.getElementById(valNun)
-  document.getElementById("outputpl").innerHTML=valNum+sec.value;
+valNum = parseInt(valNum)
+  document.getElementById("outputpl").innerHTML=valNum+parseInt(sec.value);
   document.getElementById("outputmi").innerHTML=valNum-sec.value;
 }
 </script>
