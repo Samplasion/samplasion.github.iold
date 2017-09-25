@@ -102,13 +102,17 @@ h1 span, h1 div {
 	padding: 10px;
    font-family: Futura, Arial;
 }
-h3 span, h1 div {
+h3 span, h3 div {
 	border: 4px dashed #20bcd5;
 	padding: 6px;
    font-family: Futura, Arial;
 }
 p {
    font-family: Futura, Arial;
+}
+p div {
+  border: 4px dashed #20bcd5;
+  padding: 3px;
 }
 .img-circle {
 	border: 3px solid white;
