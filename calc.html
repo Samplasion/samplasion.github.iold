@@ -12,12 +12,12 @@ title: Calculator
 </p>
 <p>Sum: <span id="outputpl"></span></p>
 <p>Difference: <span id="outputmi"></span></p>
+<button onclick="weightConverterOZ(document.getElementById('input').value, 'input2')">Refresh</button>
 </div>
 <script>
 function weightConverterOZ(valNum, valNun) {
   var sec = document.getElementById(valNun)
-valNum = parseInt(valNum)
-  document.getElementById("outputpl").innerHTML=valNum+parseInt(sec.value);
+  document.getElementById("outputpl").innerHTML=parseInt(valNum)+parseInt(sec.value);
   document.getElementById("outputmi").innerHTML=valNum-sec.value;
 }
 </script>
