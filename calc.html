@@ -5,10 +5,10 @@ title: Calculator
 <div class="section">
 <h1><div>{{ page.title }}</div></h1>
 <p>
-  <label>Ounces (oz)</label>
-  <input id="input" type="number" placeholder="Pounds"
+  <label>Enter values.</label>
+  <input id="input" type="number" placeholder="First"
   oninput="weightConverterOZ(this.value, 'input2')" onchange="weightConverterOZ(this.value, 'input2')">
-  <input id="input2" type="number" placeholder="Pounds"
+  <input id="input2" type="number" placeholder="Second"
   oninput="weightConverterOZ('input', this.value)" onchange="weightConverterOZ('input', this.value)">
 </p>
 <p>Sum: <span id="outputpl"></span></p>
@@ -17,7 +17,7 @@ title: Calculator
 <script>
 /* When the input field receives input, convert the value from pounds to kilograms */
 function weightConverterOZ(valNum, valNun) {
-  var sec = document.getElementById(valNun)
+  var sec = document.getElementById(valNun).value
   document.getElementById("outputpl").innerHTML=valNum+sec;
   document.getElementById("outputmi").innerHTML=valNum-sec;
 }
