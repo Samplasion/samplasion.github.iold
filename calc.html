@@ -6,18 +6,28 @@ title: Calculator
 <h1><div>{{ page.title }}</div></h1>
 <p>
   <label>Enter values.</label>
-  <input id="input" type="number" placeholder="First"
-  oninput="weightConverterOZ(this.value, 'input2')" onchange="weightConverterOZ(this.value, 'input2')">
+  <input id="input" type="number" placeholder="First">
+<button onclick="weightConverterOZ(document.getElementById('input').value, 'input2')">Refresh</button>
   <input id="input2" type="number" placeholder="Second">
 </p>
 <p>Sum: <span id="outputpl"></span></p>
 <p>Difference: <span id="outputmi"></span></p>
-<button onclick="weightConverterOZ(document.getElementById('input').value, 'input2')">Refresh</button>
+<p>Product: <span id="outputpe"></span></p>
+<p>Quotient: <span id="outputdi"></span></p>
+<p>Remainder: <span id="outputre"></span></p>
+<p>Power: <span id="outputpo"></span></p>
+<p>Square Root: <span id="outputsq"></span></p>
 </div>
+<p>Tip: you need only one number for square and cubic roots</p>
 <script>
 function weightConverterOZ(valNum, valNun) {
   var sec = document.getElementById(valNun)
   document.getElementById("outputpl").innerHTML=parseInt(valNum)+parseInt(sec.value);
   document.getElementById("outputmi").innerHTML=valNum-sec.value;
+  document.getElementById("outputpe").innerHTML=valNum*sec.value;
+  document.getElementById("outputdi").innerHTML=valNum/sec.value;
+  document.getElementById("outputre").innerHTML=valNum%sec.value;
+  document.getElementById("outputpo").innerHTML=Math.pow(valNum, sec.value);
+  document.getElementById("outputsq").innerHTML=Math.sqrt(valNum);
 }
 </script>
