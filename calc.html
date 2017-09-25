@@ -17,8 +17,10 @@ title: Calculator
 <p>Remainder: <span id="outputre"></span></p>
 <p>Power: <span id="outputpo"></span></p>
 <p>Square Root: <span id="outputsq"></span></p>
-</div>
+<p>Cubic Root: <span id="outputcb"></span></p>
+<p>(N)th Root: <span id="outputnt"></span></p>
 <p>Tip: you need only one number for square and cubic roots</p>
+</div>
 <script>
 function weightConverterOZ(valNum, valNun) {
   var sec = document.getElementById(valNun)
@@ -29,5 +31,12 @@ function weightConverterOZ(valNum, valNun) {
   document.getElementById("outputre").innerHTML=valNum%sec.value;
   document.getElementById("outputpo").innerHTML=Math.pow(valNum, sec.value);
   document.getElementById("outputsq").innerHTML=Math.sqrt(valNum);
+  document.getElementById("outputcb").innerHTML=Math.cbrt(valNum);
+
+  function ntrt(x, y) {
+    Math.pow(x, 1/y)
+  }
+
+  document.getElementById("outputnt").innerHTML=ntrt(valNum, sec.value);
 }
 </script>
