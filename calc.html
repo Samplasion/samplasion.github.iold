@@ -33,10 +33,18 @@ function weightConverterOZ(valNum, valNun) {
   document.getElementById("outputsq").innerHTML=Math.sqrt(valNum);
   document.getElementById("outputcb").innerHTML=Math.cbrt(valNum);
 
-  function ntrt(x, y) {
-    Math.pow(x, 1/y)
-  }
+  function nthroot(x, n) {
+  try {
+    var negate = n % 2 == 1 && x < 0;
+    if(negate)
+      x = -x;
+    var possible = Math.pow(x, 1 / n);
+    n = Math.pow(possible, n);
+    if(Math.abs(x - n) < 1 && (x > 0 == n > 0))
+      return negate ? -possible : possible;
+  } catch(e){}
+}
 
-  document.getElementById("outputnt").innerHTML=ntrt(valNum, sec.value);
+  document.getElementById("outputnt").innerHTML=nthroot(valNum, sec.value);
 }
 </script>
