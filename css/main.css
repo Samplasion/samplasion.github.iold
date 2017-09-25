@@ -97,12 +97,12 @@ p {
 #random {
   font-size: 1.65em
 }
-h1 span {
+h1 span, h1 div {
 	border: 4px dashed #20bcd5;
 	padding: 10px;
    font-family: Futura, Arial;
 }
-h3 span {
+h3 span, h1 div {
 	border: 4px dashed #20bcd5;
 	padding: 6px;
    font-family: Futura, Arial;
