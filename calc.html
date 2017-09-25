@@ -4,75 +4,54 @@ title: Calculator
 ---
 <div class="section">
 <h1><div>{{ page.title }}</div></h1>
+  <input id="input1" type="number" placeholder="Enter the first number">
+  <input id="input2" type="number" placeholder="Enter the second number">
   <button onclick="sum()">SUM</button>
   <button onclick="sub()">SUBSTRACT</button>
   <button onclick="mult()">MULTIPLY</button>
   <button onclick="div()">DIVIDE</button>
-  <button onclick="bytwo()">RAISE TO THE P. OF N</button>
+  <button onclick="bytwo()">RAISE TO THE POWER OF N</button>
   <button onclick="sqrt()">SQUARE ROOT</button><br>
   <button onclick="cleare()">CLEAR</button>
   <div class="console" id="nr">{-}</div>
 </div>
 <script>
-function sum() {
-   var n1 = prompt("1")
-   n1 = parseInt(n1)
-   var n2 = prompt("2")
-   n2 = parseInt(n2)
-   var sum = n1 + n2
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+sum+"}"
-   if (sum == "NaN") {
-     sum = "You should only input numbers"
-   }
- }
- 
- function sub() {
-   var n1 = prompt("1")
-   n1 = parseInt(n1)
-   var n2 = prompt("2")
-   n2 = parseInt(n2)
-   var sum = n1 - n2
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+sum+"}"
- }
- 
- function mult() {
-   var n1 = prompt("1")
-   var n2 = prompt("2")
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+n1 * n2+"}"
- }
- 
- function div() {
-   var n1 = prompt("1")
-   n1 = parseInt(n1)
-   var n2 = prompt("2")
-   n2 = parseInt(n2)
-   var sum = n1 / n2
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+sum+"}"
- }
- 
- function bytwo() {
-   var n1 = prompt("1")
-   n1 = parseInt(n1)
-   var n2 = prompt("2")
-   n2 = parseInt(n2)
-   var by2 = Math.pow(n1, n2)
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+by2+"}"
- }
- 
- function sqrt() {
-   var n1 = prompt("1")
-   n1 = parseInt(n1)
-   var by2 = Math.sqrt(n1)
-   let nr = document.getElementById('nr')
-   nr.innerHTML = "{"+by2+"}"
- }
- 
- function cleare() {
-   let nr = document.getElementById(`nr`);
-   nr.innerHTML = "{-}"
- }
+  function sum() {
+      var input1 = document.getElementById("input1")
+      var input2 = document.getElementById("input2")
+      var out = document.getElementById("nr")
+      out.innerHTML = input1.value + input2.value
+  }
+  function sub() {
+  var input1 = document.getElementById("input1")
+  var input2 = document.getElementById("input2")
+  var out = document.getElementById("nr")
+    out.innerHTML = input1.value - input2.value
+  }
+  function mult() {
+  var input1 = document.getElementById("input1")
+  var input2 = document.getElementById("input2")
+  var out = document.getElementById("nr")
+    out.innerHTML = input1.value * input2.value
+  }
+  function div() {
+  var input1 = document.getElementById("input1")
+  var input2 = document.getElementById("input2")
+  var out = document.getElementById("nr")
+    out.innerHTML = input1.value / input2.value
+  }
+  function bytwo() {
+  var input1 = document.getElementById("input1")
+  var input2 = document.getElementById("input2")
+  var out = document.getElementById("nr")
+    out.innerHTML = Math.pow(input1.value, input2.value)
+  }
+  function sqrt() {
+  var input1 = document.getElementById("input1")
+  var out = document.getElementById("nr")
+    out.innerHTML = Math.sqrt(input1.value)
+  }
+  function cleare() {
+    var out = document.getElementById("nr")
+    out.innerHTML = "{-}"
+</script>
