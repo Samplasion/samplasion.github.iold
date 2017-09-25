@@ -8,17 +8,15 @@ title: Calculator
   <label>Enter values.</label>
   <input id="input" type="number" placeholder="First"
   oninput="weightConverterOZ(this.value, 'input2')" onchange="weightConverterOZ(this.value, 'input2')">
-  <input id="input2" type="number" placeholder="Second"
-  oninput="weightConverterOZ('input', this.value)" onchange="weightConverterOZ('input', this.value)">
+  <input id="input2" type="number" placeholder="Second">
 </p>
 <p>Sum: <span id="outputpl"></span></p>
 <p>Difference: <span id="outputmi"></span></p>
 </div>
 <script>
-/* When the input field receives input, convert the value from pounds to kilograms */
 function weightConverterOZ(valNum, valNun) {
-  var sec = document.getElementById(valNun).value
-  document.getElementById("outputpl").innerHTML=valNum+sec;
-  document.getElementById("outputmi").innerHTML=valNum-sec;
+  var sec = document.getElementById(valNun)
+  document.getElementById("outputpl").innerHTML=valNum+sec.value;
+  document.getElementById("outputmi").innerHTML=valNum-sec.value;
 }
 </script>
