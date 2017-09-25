@@ -4,54 +4,21 @@ title: Calculator
 ---
 <div class="section">
 <h1><div>{{ page.title }}</div></h1>
-  <input id="input1" type="number" placeholder="Enter the first number">
-  <input id="input2" type="number" placeholder="Enter the second number">
-  <button onclick="sum()">SUM</button>
-  <button onclick="sub()">SUBSTRACT</button>
-  <button onclick="mult()">MULTIPLY</button>
-  <button onclick="div()">DIVIDE</button>
-  <button onclick="bytwo()">RAISE TO THE POWER OF N</button>
-  <button onclick="sqrt()">SQUARE ROOT</button><br>
-  <button onclick="cleare()">CLEAR</button>
-  <div class="console" id="nr">{-}</div>
+<p>
+  <label>Ounces (oz)</label>
+  <input id="input" type="number" placeholder="Pounds"
+  oninput="weightConverterOZ(this.value, 'input2')" onchange="weightConverterOZ(this.value, 'input2')">
+  <input id="input2" type="number" placeholder="Pounds"
+  oninput="weightConverterOZ('input', this.value)" onchange="weightConverterOZ('input', this.value)">
+</p>
+<p>Sum: <span id="outputpl"></span></p>
+<p>Difference: <span id="outputmi"></span></p>
 </div>
 <script>
-  function sum() {
-      var input1 = document.getElementById("input1")
-      var input2 = document.getElementById("input2")
-      var out = document.getElementById("nr")
-      out.innerHTML = input1.value + input2.value
-  }
-  function sub() {
-  var input1 = document.getElementById("input1")
-  var input2 = document.getElementById("input2")
-  var out = document.getElementById("nr")
-    out.innerHTML = input1.value - input2.value
-  }
-  function mult() {
-  var input1 = document.getElementById("input1")
-  var input2 = document.getElementById("input2")
-  var out = document.getElementById("nr")
-    out.innerHTML = input1.value * input2.value
-  }
-  function div() {
-  var input1 = document.getElementById("input1")
-  var input2 = document.getElementById("input2")
-  var out = document.getElementById("nr")
-    out.innerHTML = input1.value / input2.value
-  }
-  function bytwo() {
-  var input1 = document.getElementById("input1")
-  var input2 = document.getElementById("input2")
-  var out = document.getElementById("nr")
-    out.innerHTML = Math.pow(input1.value, input2.value)
-  }
-  function sqrt() {
-  var input1 = document.getElementById("input1")
-  var out = document.getElementById("nr")
-    out.innerHTML = Math.sqrt(input1.value)
-  }
-  function cleare() {
-    var out = document.getElementById("nr")
-    out.innerHTML = "{-}"
+/* When the input field receives input, convert the value from pounds to kilograms */
+function weightConverterOZ(valNum, valNun) {
+  var sec = document.getElementById(valNun)
+  document.getElementById("outputpl").innerHTML=valNum+sec;
+  document.getElementById("outputmi").innerHTML=valNum-sec;
+}
 </script>
