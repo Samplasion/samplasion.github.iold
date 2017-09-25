@@ -1,0 +1,78 @@
+---
+layout: default
+title: Calculator
+---
+<div class="section">
+<h1><div>{{ page.title }}</div></h1>
+  <button onclick="sum()">SUM</button>
+  <button onclick="sub()">SUBSTRACT</button>
+  <button onclick="mult()">MULTIPLY</button>
+  <button onclick="div()">DIVIDE</button>
+  <button onclick="bytwo()">RAISE TO THE P. OF N</button>
+  <button onclick="sqrt()">SQUARE ROOT</button><br>
+  <button onclick="cleare()">CLEAR</button>
+  <div class="console" id="nr">{-}</div>
+</div>
+<script>
+function sum() {
+   var n1 = prompt("1")
+   n1 = parseInt(n1)
+   var n2 = prompt("2")
+   n2 = parseInt(n2)
+   var sum = n1 + n2
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+sum+"}"
+   if (sum == "NaN") {
+     sum = "You should only input numbers"
+   }
+ }
+ 
+ function sub() {
+   var n1 = prompt("1")
+   n1 = parseInt(n1)
+   var n2 = prompt("2")
+   n2 = parseInt(n2)
+   var sum = n1 - n2
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+sum+"}"
+ }
+ 
+ function mult() {
+   var n1 = prompt("1")
+   var n2 = prompt("2")
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+n1 * n2+"}"
+ }
+ 
+ function div() {
+   var n1 = prompt("1")
+   n1 = parseInt(n1)
+   var n2 = prompt("2")
+   n2 = parseInt(n2)
+   var sum = n1 / n2
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+sum+"}"
+ }
+ 
+ function bytwo() {
+   var n1 = prompt("1")
+   n1 = parseInt(n1)
+   var n2 = prompt("2")
+   n2 = parseInt(n2)
+   var by2 = Math.pow(n1, n2)
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+by2+"}"
+ }
+ 
+ function sqrt() {
+   var n1 = prompt("1")
+   n1 = parseInt(n1)
+   var by2 = Math.sqrt(n1)
+   let nr = document.getElementById('nr')
+   nr.innerHTML = "{"+by2+"}"
+ }
+ 
+ function cleare() {
+   let nr = document.getElementById(`nr`);
+   nr.innerHTML = "{-}"
+ }
