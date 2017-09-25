@@ -1,0 +1,24 @@
+---
+layout: default
+title: Random Number Gener.
+---
+<script>
+function getRndInteger(min, max) {
+     return Math.floor(Math.random() * (max - min + 1) ) + min;
+ }
+ 
+function random() {
+   var evenodd = '<font color="#090">odd</font>.'
+   let lol = getRndInteger(1, 1000)
+   if (lol%2==0) {
+     evenodd = '<font color="#00f">even</font>.'
+   }
+   var ll = document.getElementById('random')
+   ll.innerHTML = 'Your random number is <font color="#af5000">' + lol + '</font> and is ' + evenodd
+}
+</script>
+<div class="section">
+  <div class="highlight" id="random">----
+  </div>
+</div
+    
