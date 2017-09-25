@@ -7,15 +7,15 @@ title: Converter (oz to kg & g)
 <p>
   <label>Ounces (oz)</label>
   <input id="inputPounds" type="number" placeholder="Pounds"
-  oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  oninput="weightConverterOZ(this.value)" onchange="weightConverterOZ(this.value)">
 </p>
 <p>Kilograms (Kg): <span id="outputKGrams"></span></p>
 <p>Grams (g): <span id="outputGrams"></span></p>
 </div>
 <script>
 /* When the input field receives input, convert the value from pounds to kilograms */
-function weightConverter(valNum) {
+function weightConverterOZ(valNum) {
   document.getElementById("outputGrams").innerHTML=(valNum/35.274)*1000;
-document.getElementById("outputGrams").innerHTML=valNum/35.274;
+  document.getElementById("outputKGrams").innerHTML=valNum/35.274;
 }
 </script>
