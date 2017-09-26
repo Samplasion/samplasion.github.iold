@@ -1,21 +1,23 @@
 ---
 layout: default
-title: Converter (oz to values)
+title: Converter (fl. oz to values)
 ---
 <div class="section">
 <h1><div>{{ page.title }}</div></h1>
 <p>
-  <label>Ounces (oz)</label>
+  <label>Ounces (fl. oz)</label>
   <input id="inputPounds" type="number" placeholder="Pounds"
   oninput="weightConverterOZ(this.value)" onchange="weightConverterOZ(this.value)">
 </p>
 <p>Kilograms (Kg): <span id="outputKGrams"></span></p>
 <p>Grams (g): <span id="outputGrams"></span></p>
+<p>Liters (L): <span id="outputLiters"></span></p>
 </div>
 <script>
 /* When the input field receives input, convert the value from pounds to kilograms */
 function weightConverterOZ(valNum) {
   document.getElementById("outputGrams").innerHTML=(valNum/35.274)*1000;
   document.getElementById("outputKGrams").innerHTML=valNum/35.274;
+  document.getElementById("outputLiters").innerHTML=valNum/33.814;
 }
 </script>
