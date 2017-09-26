@@ -4,7 +4,7 @@ title: Clock
 ---
 <div class="section">
 <h1><span>{{ page.title }}</span></h1>
-<button onclick="date()"> ~ </button><br /><br />
+<button id="clicked" onclick="date()"></button><br /><br />
 <div class="highlight" id="lol"></div>
 </div>
 <script>
@@ -71,4 +71,5 @@ var d = new Date;
 function date() {
   setInterval(llo, 1000)
 }
+document.getElementById("clicked").click()
 </script>
