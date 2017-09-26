@@ -2,3 +2,73 @@
 layout: default
 title: Clock
 ---
+<div class="section">
+<h1><span>{{ page.title }}</span></h1>
+<button onclick="date()"> ~ </button><br /><br />
+<div class="highlight" id="lol"></div>
+</div>
+<script>
+function llo() {
+var d = new Date;
+   var day = d.getDay();
+   var dd = d.getDay();
+   dd += 1
+   if (day==0) {
+     day="Sunday"
+   } else if (day==1) {
+     day='Monday'
+   } else if (day==2) {
+     day='Tuesday'
+   } else if (day==3) {
+     day='Wednesday'
+   } else if (day==4) {
+     day='Thursday'
+   } else if (day==5) {
+     day='Friday'
+   } else {
+     day='Saturday'
+   };
+   var mday = d.getDate();
+   var month = d.getMonth();
+   month += 1;
+   var year = d.getYear();
+   year += 1900;
+  var hours = d.getHours();
+  var mins = d.getMinutes();
+  var secs = d.getSeconds();
+     if (month==1) {
+     month="January"
+   } else if (month==2) {
+     month='February'
+   } else if (month==3) {
+     month='March'
+   } else if (month==4) {
+     month='April'
+   } else if (month==5) {
+     month='May'
+   } else if (month==6) {
+     month='June'
+   } else if (month==7) {
+     month='July'
+   } else if (month==8) {
+     month='August'
+   } else if (month==9) {
+     month='September'
+   } else if (month==10) {
+     month='October'
+   } else if (month==11) {
+     month='November'
+   } else if (month==12) {
+     month='December'
+   } else {
+     month='N/A'
+   };
+  var sep = ":"
+  hours+=sep
+  mins+=sep
+  document.getElementById('lol').innerHTML = day+", "+month+" "+mday+", "+year+" "+hours+mins+secs;
+}
+function date() {
+  setInterval(llo, 1000)
+}
+</script>
