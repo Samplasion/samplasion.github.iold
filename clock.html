@@ -63,6 +63,15 @@ var d = new Date;
    } else {
      month='N/A'
    };
+  if (secs < 10) {
+    secs = '0'+secs
+  }
+  if (mins < 10) {
+    mins = '0'+mins
+  }
+  if (hours < 10) {
+    hours = '0'+hours
+  }
   var sep = ":"
   hours+=sep
   mins+=sep
