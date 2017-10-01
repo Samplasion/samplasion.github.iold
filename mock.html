@@ -1,1 +1,23 @@
+---
+layout: default
+title: Text mocking
+---
+<div class="section">
+<h1><span>{{ page.title }}</span></h1>
+<input type="text" id="mock" oninput="altCase(this.value, 'output')" onchange="altCase(this.value, 'output')" />
+<div class="highlight" id="output">
+<script>
 
+function altCase(string, id){
+    var output = "";
+    for(var i = 0; i < string.length; i++){
+        if (i % 2 != 0) {
+            output += string[i].toUpperCase();
+        }
+        else {
+            output += string[i].toLowerCase();
+         }   
+    }
+    document.getElementById(id).innerHTML = output;
+}
+</script>
