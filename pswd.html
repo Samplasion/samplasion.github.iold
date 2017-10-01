@@ -1,30 +1,34 @@
 ---
 layout: default
-title: Random Password Generator
+title: Text Encryptor/Decryptor
 ---
 <div class="section">
 <h1><div>{{ page.title }}</div></h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
-
-<br><br>
-<label>Encrypted</label>
-<div id="demo1"></div>
-<br>
-
-<label>Decrypted</label>
-<div id="demo2"></div>
-
-<br>
-<label>Actual Message</label>
+<p>
+<label>Enter text to encrypt:</label>
+<input type="text" placeholder="mySecretMessage" id="text" />
+<label>Enter password for encryption/decryption (remember it):</label>
+<input type="password" placeholder="mySecretPassword" id="pswd" />
+Encrypted text: <div class="highlight" id="encr">ABC123</div>
+Decrypted text: <div class="highlight" id="decr">AB12</div>
+<button onclick="encr(document.getElementById('text').value, document.getElementById('pswd').value)">Encrypt</button>
+<button onclick="decr(document.getElementById('text').value, document.getElementById('pswd').value)">Decrypt</button>
+</p>
 </div>
 <script>
- var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+ var Message = document.getElementById('text')
+ var swd = document.getElementById('pswd')
+function encr(message, pass) {
+ var encrypted = CryptoJS.AES.encrypt(message, pass);
 //U2FsdGVkX18ZUVvShFSES21qHsQEqZXMxQ9zgHy+bu0=
 
-var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+document.getElementById("encr").innerHTML = encrypted;
+}
+function decr(message, pass) {
+var decrypted = CryptoJS.AES.decrypt(message, pass);
 //4d657373616765
 
-
-document.getElementById("demo1").innerHTML = encrypted;
-document.getElementById("demo2").innerHTML = decrypted;
-document.getElementById("demo3").innerHTML = decrypted.toString(CryptoJS.enc.Utf8);</script>
+document.getElementById("decr").innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
+}
+</script>
