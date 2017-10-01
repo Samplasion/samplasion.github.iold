@@ -7,9 +7,9 @@ title: Text Encryptor/Decryptor
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
 <p>
 <label>Enter text to encrypt:</label>
-<input type="text" placeholder="mySecretMessage" id="text" />
+<input type="text" placeholder="mySecretMessage" id="text" /><br>
 <label>Enter password for encryption/decryption (remember it):</label>
-<input type="password" placeholder="mySecretPassword" id="pswd" />
+<input type="password" placeholder="mySecretPassword" id="pswd" /><br>
 Encrypted text: <div class="highlight" id="encr">ABC123</div>
 Decrypted text: <div class="highlight" id="decr">AB12</div>
 <button onclick="encr(document.getElementById('text').value, document.getElementById('pswd').value)">Encrypt</button>
