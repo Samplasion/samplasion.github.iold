@@ -15,7 +15,7 @@ title: Text Encryptor/Decryptor
 <input type="text" placeholder="mySecretMessage" id="text" /><br>
 <label>Enter password for encryption/decryption (remember it):</label>
 <input type="password" placeholder="mySecretPassword" id="pswd" /><br>
-Encrypted text: <div class="highlight" id="encr">ABC123</div>
+<p>Encrypted text: </p><div class="highlight" id="encr">ABC123</div>
 <p>Decrypted text: </p><div class="highlight" id="decr">AB12</div>
 <button onclick="encr(document.getElementById('text').value, document.getElementById('pswd').value)">Encrypt</button>
 <button onclick="decr(document.getElementById('text').value, document.getElementById('pswd').value)">Decrypt</button>
