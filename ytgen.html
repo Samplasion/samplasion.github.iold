@@ -1,1 +1,26 @@
-
+---
+layout: default
+title: Random YouTube Video Generator
+---
+<script>
+function hex() {
+    var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
+    var rand = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand2 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand3 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand4 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand5 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand6 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand7 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand8 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand9 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand10 = nrs[Math.floor(Math.random() * nrs.length)];
+    var rand11 = nrs[Math.floor(Math.random() * nrs.length)];
+   document.getElementById("randex").innerHTML = '<video controls><source src="http://www.youtube.com/watch?v='+rand+rand2+rand3+rand4+rand5+rand6+rand7+rand8+rand9+rand10+rand11+'">Not supported</video>'
+}
+</script>
+<div class="section">
+<h1><div>{{ page.title }}</div></h1>
+<button onclick="hex()">RANDOM VIDEO GENERATOR</button><br />
+<div class="console" id="randyt">Video here</div>
+</div>
