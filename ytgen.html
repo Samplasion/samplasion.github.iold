@@ -4,7 +4,8 @@ title: Random YouTube Video Generator
 ---
 <script>
 function hex() {
-    var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
+    var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "a", "B", "b", "C","c","D","d","E","e","F", "f","G","g","H","h","I","i","J","j", "K","k","L","l","M","m","N","n","O","o",
+"P","p","Q", "q","R","r","S","s","T","t",   "U","u","V","v","W","w","X","x","Y","y","Z","z", "_", "-"]
     var rand = nrs[Math.floor(Math.random() * nrs.length)];
     var rand2 = nrs[Math.floor(Math.random() * nrs.length)];
     var rand3 = nrs[Math.floor(Math.random() * nrs.length)];
@@ -16,7 +17,9 @@ function hex() {
     var rand9 = nrs[Math.floor(Math.random() * nrs.length)];
     var rand10 = nrs[Math.floor(Math.random() * nrs.length)];
     var rand11 = nrs[Math.floor(Math.random() * nrs.length)];
-   document.getElementById("randyt").innerHTML = '<video controls><source src="http://www.youtube.com/watch?v='+rand+rand2+rand3+rand4+rand5+rand6+rand7+rand8+rand9+rand10+rand11+'">Not supported</video>'
+   document.getElementById("randyt").innerHTML = '<iframe width="420" height="315"
+src="https://www.youtube.com/embed/'+rand+rand2+rand3+rand4+rand5+rand6+rand7+rand8+rand9+rand10+rand11+'">
+</iframe>'
 }
 </script>
 <div class="section">
