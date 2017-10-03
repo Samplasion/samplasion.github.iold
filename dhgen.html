@@ -1,0 +1,21 @@
+---
+layout: default
+title: Not-So-Random Demian Holden Video Generator
+---
+<div class="section">
+<h1><div>{{ page.title }}</div></h1>
+<br /><button onclick="videoDemianHolden()">Demian Holden Video Generator</button>
+<div id="result"><iframe width="420" height="315"
+src="https://www.youtube.com/embed/DtiRhioEpuU"></iframe></div>
+</div>
+<script>
+function randomArrayItem(name) {
+  return name[Math.floor(Math.random() * name.length)];
+}
+function videoDemianHolden() {
+  var dhlist = ["DtiRhioEpuU", "1d26x72ZT6U"]
+  var dh = randomArrayItem(dhlist)
+  document.getElementById("result").innerHTML = `<iframe width="420" height="315"
+src="https://www.youtube.com/embed/`+dh+`"></iframe>`
+}
+</script>
