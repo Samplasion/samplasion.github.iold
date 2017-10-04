@@ -186,7 +186,7 @@ div.tab button.active {
 #ads {
    color: #FFF;
 	font-size: 0.8em;
-	animation: allLarge;
+	animation-name: allLarge;
 	animation-duration: 2s;
 }
 @keyframes allLarge {
