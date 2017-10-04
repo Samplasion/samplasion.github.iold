@@ -180,3 +180,14 @@ div.tab button.active {
     from: { opacity: 0; }
     to: { opacity: 1; }
 }
+
+/*Ads disclaimer*/
+#ads {
+	font-size: 0.4em;
+	animation: allLarge 2s;
+}
+@keyframes allLarge {
+	from: { width: 0px; }
+	to: { width: 100%; }
+}
+/*end*/
