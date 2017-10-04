@@ -174,7 +174,8 @@ div.tab button.active {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    animation: fadeEffect 1s;
+	animation-name: fadeEffect;
+	animation-duration: 1s;
 }
 @keyframes fadeEffect {
     from: { opacity: 0; }
@@ -184,10 +185,15 @@ div.tab button.active {
 /*Ads disclaimer*/
 #ads {
 	font-size: 0.4em;
-	animation: allLarge 2s;
+	animation: allLarge;
+	animation-duration: 2s;
 }
 @keyframes allLarge {
 	from: { width: 0px; }
 	to: { width: 100%; }
 }
 /*end*/
+footer {
+	color: white;
+	background-color: Blue;
+}
