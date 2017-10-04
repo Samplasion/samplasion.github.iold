@@ -184,7 +184,8 @@ div.tab button.active {
 
 /*Ads disclaimer*/
 #ads {
-	font-size: 0.4em;
+   color: #FFF;
+	font-size: 0.8em;
 	animation: allLarge;
 	animation-duration: 2s;
 }
@@ -194,6 +195,6 @@ div.tab button.active {
 }
 /*end*/
 footer {
-	color: white;
-	background-color: Blue;
+	color: #FFFFFF;
+	background-color: #002A5B;
 }
