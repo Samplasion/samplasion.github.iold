@@ -197,4 +197,8 @@ div.tab button.active {
 footer {
 	color: #FFFFFF;
 	background-color: #002A5B;
+	border-radius: 20px;
+}
+footer a {
+	color: #ffc44e;
 }
