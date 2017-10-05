@@ -19,10 +19,16 @@ title: Calculator
 <p>Square Root: <span id="outputsq"></span></p>
 <p>Cubic Root: <span id="outputcb"></span></p>
 <p>(N)th Root: <span id="outputnt"></span></p>
+<p>Factorial of x: <span id="outputfx"></span></p>
+<p>Factorial of y: <span id="outputfy"></span></p>
 <p><div>Tip: you need only one number for square and cubic roots</div></p>
 </div>
 <script>
 function weightConverterOZ(valNum, valNun) {
+  
+  function fact(n) {
+    return Math.pow(n, n)
+  }
   var sec = document.getElementById(valNun)
   document.getElementById("outputpl").innerHTML=parseInt(valNum)+parseInt(sec.value);
   document.getElementById("outputmi").innerHTML=valNum-sec.value;
@@ -32,6 +38,8 @@ function weightConverterOZ(valNum, valNun) {
   document.getElementById("outputpo").innerHTML=Math.pow(valNum, sec.value);
   document.getElementById("outputsq").innerHTML=Math.sqrt(valNum);
   document.getElementById("outputcb").innerHTML=Math.cbrt(valNum);
+  document.getElementById("outputfx").innerHTML=fact(valNum);
+  document.getElementById("outputfy").innerHTML=fact(sec.value);
 
   function nthroot(x, n) {
   try {
