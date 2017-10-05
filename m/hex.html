@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="javascript/functions.js" type="text/javascript"></script>
+<title>Random color generator</title>
+<meta content="iPod,iPhone,Webkit,iWebkit,Website,Create,mobile,Tutorial,free" name="keywords" />
+<meta content="now completly styles thanks to css these form elements are lighter and easier to use than ever before." name="description" />
+</head>
+
+<body>
+
+<div id="topbar">
+	<div id="leftnav">
+		<a href="/m/index.html"><img alt="home" src="images/home.png" />
+    </a>
+  </div>
+</div>
+<div class="searchbox">
+	<form action="" method="get">
+		<fieldset><input id="search" placeholder="Search" type="text" />
+		<input id="submit" type="hidden" /></fieldset>
+	</form>
+</div>
+<div id="content">
+		<span class="graytitle">Generate random color</span>
+		<ul class="pageitem"><li class="button">
+			<button onclick="hex()">GENERATE!</button></li>
+      <li class="button">
+  			<input name="GENERATE!" type="submit" onclick="hex()" value="GENERATE!"></li>
+      <li class="textbox"><p id="randex">#000000 is the color<p></li>
+		</ul>
+</div>
+<div id="footer">
+	<a href="http://snippetspace.com">Powered by iWebKit</a></div>
+  <script>
+    function hex() {
+      var nrs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
+      var rand = nrs[Math.floor(Math.random() * nrs.length)];
+      var rand2 = nrs[Math.floor(Math.random() * nrs.length)];
+      var rand3 = nrs[Math.floor(Math.random() * nrs.length)];
+      var rand4 = nrs[Math.floor(Math.random() * nrs.length)];
+      var rand5 = nrs[Math.floor(Math.random() * nrs.length)];
+      var rand6 = nrs[Math.floor(Math.random() * nrs.length)];
+      document.getElementById("randex").innerHTML = '<font color="#'+rand+rand2+rand3+rand4+rand5+rand6+'">#'+rand+rand2+rand3+rand4+rand5+rand6+' is the color</font>'
+    }
+  </script>
+</body>
+</html>
