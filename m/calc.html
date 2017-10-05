@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="pics/homescreen.gif" rel="apple-touch-icon" />
+<meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+<link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="javascript/functions.js" type="text/javascript"></script>
+<title>Calculator | Mobile Projectio {!]</title>
+<meta content="iPod,iPhone,Webkit,iWebkit,Website,Create,mobile,Tutorial,free" name="keywords" />
+<meta content="now completly styles thanks to css these form elements are lighter and easier to use than ever before." name="description" />
+</head>
+
+<body>
+
+<div id="topbar">
+	<div id="leftnav">
+		<a href="/m/index.html"><img alt="home" src="images/home.png" />
+    </a>
+  </div>
+</div>
+<div class="searchbox">
+	<form action="" method="get">
+		<fieldset><input id="search" placeholder="Search" type="text" />
+		<input id="submit" type="hidden" /></fieldset>
+	</form>
+</div>
+<div id="content">
+		<span class="graytitle">About this tool</span>
+			<ul class="pageitem">
+				<li class="textbox">
+					This tool uses a mechanism to convert input number (this.value) to output values, with mathematical operations. Tip: you need only one number for square and cubic
+					roots.
+				</li>
+			</ul>
+		<span class="graytitle">Calculate</span>
+			<ul class="pageitem">
+					<li class="bigfield">
+						  <input id="input" type="number" placeholder="First value">
+					</li>
+					<li class="bigfield">
+						  <input id="input2" type="number" placeholder="Second value">
+					</li>
+					<li class="button">
+						<input name="CALCULATE!" onclick="weightConverterOZ(document.getElementById('input').value, 'input2')" type="submit" value="CALCULATE!" />
+					</li>
+      		<li class="textbox">
+						<p>
+							Sum: <span id="outputpl">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Difference: <span id="outputmi">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Product: <span id="outputpe">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Quotient: <span id="outputdi">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Remainder: <span id="outputre">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Power: <span id="outputpo">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Sq. Root: <span id="outputsq">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Cb. Root: <span id="outputcb">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							(N)th Root: <span id="outputnt">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Fact. of x: <span id="outputfx">0</span>
+						</p>
+					</li>
+					<li class="textbox">
+						<p>
+							Fact. of y: <span id="outputfy">0</span>
+						</p>
+					</li>
+			</ul>
+</div>
+<div id="footer">
+	<a href="http://snippetspace.com">Powered by iWebKit 5 (iOS 6-style)</a></div>
+	<script>
+function weightConverterOZ(valNum, valNun) {
+
+  function fact(n) {
+    return Math.pow(n, n)
+  }
+  var sec = document.getElementById(valNun)
+  document.getElementById("outputpl").innerHTML=parseInt(valNum)+parseInt(sec.value);
+  document.getElementById("outputmi").innerHTML=valNum-sec.value;
+  document.getElementById("outputpe").innerHTML=valNum*sec.value;
+  document.getElementById("outputdi").innerHTML=valNum/sec.value;
+  document.getElementById("outputre").innerHTML=valNum%sec.value;
+  document.getElementById("outputpo").innerHTML=Math.pow(valNum, sec.value);
+  document.getElementById("outputsq").innerHTML=Math.sqrt(valNum);
+  document.getElementById("outputcb").innerHTML=Math.cbrt(valNum);
+  document.getElementById("outputfx").innerHTML=fact(valNum);
+  document.getElementById("outputfy").innerHTML=fact(sec.value);
+  function nthroot(x, n) {
+  try {
+    var negate = n % 2 == 1 && x < 0;
+    if(negate)
+      x = -x;
+    var possible = Math.pow(x, 1 / n);
+    n = Math.pow(possible, n);
+    if(Math.abs(x - n) < 1 && (x > 0 == n > 0))
+      return negate ? -possible : possible;
+  } catch(e){}
+}
+  document.getElementById("outputnt").innerHTML=nthroot(valNum, sec.value);
+}
+</script>
+</body>
+</html>
