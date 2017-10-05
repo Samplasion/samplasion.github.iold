@@ -1,0 +1,66 @@
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            body {
+                -webkit-user-select: none;
+                -webkit-text-size-adjust: none;
+                font: -apple-system-short-body;
+                color: rgb(125, 127, 127);
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            p {
+                text-align:center;
+                word-wrap: break-word;
+                margin: 123px 50px 0 50px;
+            }
+
+            a {
+                font-weight: bold;
+                color: inherit;
+            }
+            .boxx {
+                border: 1px 1px 1px 1px #000000;
+            }
+        </style>
+        <title>Cannot Open Page</title>
+		</head>
+    <body class="iphone">
+        <nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>----<br>
+    <input type="radio" name="lng" value="1" id="lng1" checked /> IT <br />
+    <input type="radio" name="lng" value="2" id="lng2" /> EN <br />----<br />
+    <label>Safari cannot open the page because: </label>
+    <input type="text" id="box" oninput="cha()" onchange="cha()" /></div>
+        <p id="res">Safari non può aprire la pagina perché iPod touch non è connesso a&nbsp;Internet.</p>
+    <script>
+    var box = document.getElementById('box')
+    var res = document.getElementById('res')
+    var lng1 = document.getElementById("lng1")
+    var lng2 = document.getElementById("lng2")
+    function cha() {
+      res.innerHTML = 'Safari cannot open the page because '+box.value
+      if (box.value==""&&lng2.checked==true) {
+        res.innerHTML = "Safari cannot open the page because your iPod touch is not connected to the&nbsp;Internet."
+      } else if (box.value==""&&lng1.checked==true) {
+        res.innerHTML = "Safari non può aprire la pagina perché iPod touch non è connesso a&nbsp;Internet."
+      } else if (lng2.checked==true) {
+        res.innerHTML = 'Safari cannot open the page because '+box.value
+      } else {
+        res.innerHTML = 'Safari non può aprire la pagina perché '+box.value
+      }
+    }
+</script>
+    
+
+</body>
