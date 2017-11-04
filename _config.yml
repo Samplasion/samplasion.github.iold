@@ -8,4 +8,4 @@ gems:
  - jekyll-mentions
  - jekyll-sitemap
  - jekyll-feed
-excerpt_separator: "<!--more-->"
+excerpt_separator: <!--more-->
