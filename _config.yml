@@ -7,4 +7,4 @@ gems:
  - jekyll-mentions
  - jekyll-sitemap
  - jekyll-feed
-excerpt_separator: "|-|"
+excerpt_separator: "<!--more-->"
