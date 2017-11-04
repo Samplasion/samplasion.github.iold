@@ -6,6 +6,6 @@ title: Samplasion's Blog
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a><br>{{ post.excerpt }}</li>
+	    <li><span>{{ post.date | date_to_string }}</span> » <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3><br>{{ post.excerpt }}<br>Tags: {{ post.tags }}</li>
 	  {% endfor %}
 	</ul>
