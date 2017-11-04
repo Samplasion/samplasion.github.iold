@@ -6,3 +6,5 @@ gems:
  - jemoji
  - jekyll-mentions
  - jekyll-sitemap
+ - jekyll-feed
+excerpt_separator: "|-|"
