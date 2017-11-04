@@ -2,6 +2,7 @@ name: "Samplasion Projectio"
 title_separator: "-"
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+author: Samplasion
 gems:
  - jemoji
  - jekyll-mentions
