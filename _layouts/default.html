@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<link rel="icon" href="fav.ico.n.ico">
-			<script src="js/jquery.js"></script>
-			<title>{{ page.title }} | Samplasion Projectio[!}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2629383633762978",
-    enable_page_level_ads: true
-  });
-</script>
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-				<script id="_wau5k6">var _wau = _wau || [];
-_wau.push(["tab", "uvavnxxxzr05", "5k6", "right-middle"]);
-(function() {var s=document.createElement("script"); s.async=true;
-s.src="//widgets.amung.us/tab.js";
-document.getElementsByTagName("head")[0].appendChild(s);
-})();</script>
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="http://samplasion.github.io">this site</a></li>
-	        		<li><a href="https://github.com/samplasion">my github</a></li>
-				<li><a href="/css/main.css">my css</a></li><br /></ul>
-				<script id="_wauxp4">
-					var _wau = _wau || []; _wau.push(["small", "uvavnxxxzr05", "xp4"]);
-					(function() {var s=document.createElement("script"); s.async=true;
-					s.src="//widgets.amung.us/small.js";
-					document.getElementsByTagName("head")[0].appendChild(s);
-					})();</script>
-				<p id="ads">I use ads. If you don't want them, use an AdBlocker, it's fine for me, but they pay me for my [work?].</p>
-			</footer>
-		</body>
-	</html>
+<html lang="en">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
+    <!-- ORIGINAL: -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="propeller" content="aec3113016d891cc06a6bcc4a3228b3e" />
+    <script type="text/javascript" src="//go.oclasrv.com/apu.php?zoneid=1442682"></script>
+    <title>{{ page.title }} | SamplasionWeb</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="/">SamplasionWeb</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lang <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/">EN</a></li>
+            <li><a href="/it">IT</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">News <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/news/apple">Apple World</a></li>
+          </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br id="toTop"><br><br><br>
+  {{ content }}
+    <footer class="container-fluid text-center">
+ 	 <a href="#toTop" title="To Top">
+ 	   <span class="glyphicon glyphicon-chevron-up"></span>
+ 	 </a>
+ 	 <p>Bootstrap Theme Made By <a href="https://www.bootswatch.com" title="Visit Bootswatch">Bootswatch</a></p>
+    <p>This page has {{ page.content | number_of_words }} words</p>
+    </footer>
+  </body>
+</html>
