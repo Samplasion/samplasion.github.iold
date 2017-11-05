@@ -6,11 +6,6 @@ tags: updates, injects, cia, Nintendo
 author: Samplasion
 comments: true
 ---
-## Table of contents
-* [Definitions](#def)
-* [Content of the post](#cont)
-### Definitions {#def}
 [SMB]: Super Mario Bros.
 [CFW]: Custom Firmware
-### Content {#cont}
 Yesterday I got SMB 3Mix in my Nintendo 3DS<!--more-->, injected in a `.cia` by a program called **Ultimate NES VC Injector for 3DS**. What this program basically does is, in order, taking a `.nes` rom, taking its data from a database or custom data _(title, short title, publisher and icon)_, selecting a banner, a Title ID and a screen mode and, finally, injecting it all in a CFW-installable `.cia`.
